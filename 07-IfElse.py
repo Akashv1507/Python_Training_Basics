@@ -11,6 +11,7 @@
 # code 1
 marks = 30
 
+# python uses indentation 
 if marks>=33:
     print("student is passed")
 else:
@@ -24,7 +25,7 @@ numb1= 20
 numb2 = 30 
 numb3 = 40
 
-if numb1>numb2:
+if numb1>numb2 :
     if numb1>numb3:
         print(f'number {numb1} is greatest') # template literals
     else:
@@ -38,6 +39,7 @@ else:
 
 name = "akdnasfjsdfjdsjfdas 9+9"
 print(name)
-name = f"akdnasfjsdfjdsjfdas {9+9}"
+# template string/literals 
+name = f"akdnasfjsdfjdsjfdas {9+9} 9+9"
 print(name)
 
