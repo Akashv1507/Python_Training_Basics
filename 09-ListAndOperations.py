@@ -49,9 +49,7 @@ print(emptyList[1][-8:-2])
 
 #list.sort(reverse=True|False, key=myFunc)
 unsortedList = [5,3,10,11,2354,11,234]
-sortedList = unsortedList.sort() # this will not return new sorted list, change will take inplace
+# sortedList = unsortedList.sort() # this will not return new sorted list, change will take inplace
 
 sortedNewListReturned = sorted(unsortedList)# this will return new branded sorted list, no inplace operation
-
-
 
