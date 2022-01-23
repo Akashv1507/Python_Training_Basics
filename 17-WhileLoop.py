@@ -1,6 +1,4 @@
 
-from pickle import TRUE
-
 # loop variable initialization
 loopVar = 1
 
@@ -12,6 +10,7 @@ while loopVar<=10:
     print('------------------------------------')
     #loop variable modification(commpulsory step)
     loopVar = loopVar *3
+
 
 print("normal loop execution")
 

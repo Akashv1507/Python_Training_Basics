@@ -1,5 +1,3 @@
-from xml.sax.handler import property_interning_dict
-
 
 numbList = [1,0,2,0,24,65,0,0]
 number = int(input ("Please enter number whose table you want to print : "))
@@ -10,7 +8,7 @@ sum = 0
 ind = 0
  
 # print sum of elements in list
-while(ind<len(numbList)):
+while(ind<len(numbList)):           #len(numbList)=8
     sum = sum + numbList[ind]
     ind = ind+1
 
@@ -21,6 +19,7 @@ while(ind<len(numbList)):
     if numbList[ind] == 0:
         countZero= countZero + 1
     ind = ind+1
+
 
 print(f'No of time 0 in list is {countZero}')
 print(f'sum of  list is {sum}')
