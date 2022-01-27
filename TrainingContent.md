@@ -11,7 +11,7 @@ a= [1,2,3,4] List
 b= ('a','b','c') tuples
 c {'key1': value1, 'key2': value2} dictionary
 
-7. Error handling (try catch block)
+7. Error handling (try catch block), exception handling
 8. database connection(ORM)
 
 note () -> normal braces, []-> square braces , {}-> curly braces
