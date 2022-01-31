@@ -4,7 +4,6 @@
 #     maxEle = numbList[0]
 #     minEle = numbList[0]
 #     sum = 0
-
 #     for ele in numbList:
 #         if ele>maxEle:
 #             maxEle=ele
@@ -42,7 +41,7 @@ def getListFactorials(numbList):
     #     for i in range(1,ele):
     #         fact = fact*i
     #     factorialList.append(fact)
-    
+
     # using factorial function
     for ele in numbList:
         fact =getFact(ele)
