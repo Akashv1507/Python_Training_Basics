@@ -17,7 +17,6 @@ finally:
     print('-----------finally block-----------')
     print("this code block executes everytime")
 
-
 print('after for loop body')
 print('python file execution terminates')
 print('----------ENd of pytho file-------')

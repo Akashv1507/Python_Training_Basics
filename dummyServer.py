@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
 
@@ -16,16 +16,27 @@ def home():
     return render_template('home.html', data= listOfDictionary)
 
 # return 
-@app.route('/hello')
-def hello2():
-    return "hello hello"
+@app.route('/hello', methods=['POST','GET'])
+def hello():
+    # distric_id = request.get("distric_id")
+    # date = request.get("date")
+    # connect to nic database server(using password and username)
+    # write sql to fetch vaccine availability
+    # retrun json response
+    if request.method == "POST":
+        return "POST Request"
+    
+    elif request.method=='GET':
+        return"Get Request"
+    
 
 @app.route('/db')
 def anyFuncName():
+
     # connect db
     # fetch from database using select query
     # return response
-    return jsonify(listOfDictionary)
+    return jsonify({'sessions':listOfDictionary})
 
 
 if __name__ == '__main__':
