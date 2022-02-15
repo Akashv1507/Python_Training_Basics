@@ -27,7 +27,33 @@ def hello():
         return "POST Request"
     
     elif request.method=='GET':
-        return"Get Request"
+        return "Get Request"
+
+@app.route('/api/queryParams', methods=['POST','GET'])
+def queryParamDemo():
+    queryXVal = request.args.get('xVal')
+    queryYVal=  request.args.get('yVal')
+   
+    # write sql query to fetch data-> select name ,age from tbl where name= queryXVal and age=queryYVal
+    if request.method == "POST":
+        return f"POST Request with query parameter xval = {queryXVal} yval = {queryYVal}"
+    
+    elif request.method=='GET':
+        return f"Get Request with query parameter xval = {queryXVal} yval = {queryYVal}"
+
+@app.route('/api/bodyParams', methods=['POST','GET'])
+def bodyParameterDemo():
+    reqJson = request.get_json()
+    bodyParamsXVal = reqJson['xVal']
+    bodyParamsYVal = reqJson['yVal']
+ 
+   
+    # write sql query to fetch data-> select name ,age from tbl where name= queryXVal and age=queryYVal
+    if request.method == "POST":
+        return f"POST Request with body parameter xval = {bodyParamsXVal} yval = {bodyParamsYVal}"
+    
+    elif request.method=='GET':
+        return f"Get Request with body parameter xval = {bodyParamsXVal} yval = {bodyParamsYVal}"
     
 
 @app.route('/db')
@@ -41,4 +67,4 @@ def anyFuncName():
 
 if __name__ == '__main__':
     # app.run(host="0.0.0.0", port=int(appConfig['flaskPort']), debug=True)
-    app.run(debug=True, port=8078)
+    app.run(debug=True, port=8080)
