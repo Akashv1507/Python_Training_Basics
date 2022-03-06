@@ -1,6 +1,9 @@
 ### Oops concepts(obejct oriented programming)
 
 1. Inheritance
+   1.a single inheritance
+   1.b multiple inheritance
+   1.c multilevel inheritance
 2. polymorphism
    2.a method(function) overloading
    2.b method overiding

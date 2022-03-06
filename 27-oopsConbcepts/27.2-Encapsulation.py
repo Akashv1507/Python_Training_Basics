@@ -1,5 +1,3 @@
-from matplotlib.pyplot import cla
-
 
 class Database:
 
