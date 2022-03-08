@@ -1,3 +1,6 @@
+from cmath import pi
+
+
 class Calculator:
     # this is a class variable
     pi = 3.14

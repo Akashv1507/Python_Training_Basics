@@ -1,5 +1,5 @@
 class Base(object):
-     
+    
     # Constructor
     def __init__(self, name):
         self.name = name
@@ -8,7 +8,7 @@ class Base(object):
     # To get name
     def getName(self):
         return self.name
- 
+    
  
 # Inherited or Sub class (Note Person in bracket)
 class Child(Base):
